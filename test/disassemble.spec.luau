@@ -1,9 +1,8 @@
-local frktest = require("@lune_packages/frktest")
-local disassemble = require("@hangul-luau/core/disassemble")
+local frktest = require("../lune_packages/frktest")
+local disassemble = require("../src/core/disassemble")
 
 local test = frktest.test
 local check = frktest.assert.check
-local req = frktest.assert.require
 
 return function()
     test.suite("disassemble", function()

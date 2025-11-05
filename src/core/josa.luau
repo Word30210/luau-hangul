@@ -18,7 +18,6 @@ type JosaOption = "이/가"
 local module = {}
 
 --#[ Modules ]#--
-local better_table = require("@lune_packages/better_table")
 local disassemble = require("../core/disassemble")
 local hasBatchim = require("../core/hasBatchim")
 local constants = require("../internal/constants")

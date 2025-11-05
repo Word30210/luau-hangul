@@ -1,5 +1,5 @@
 --#[ Modules ]#--
-local better_table = require("@lune_packages/better_table")
+local super_table = require("../../luau_packages/super_table")
 
 --#[ Variables ]#--
 local COMPLETE_HANGUL_START_CHARCODE = utf8.codepoint("가")
@@ -91,7 +91,7 @@ local CHOSEONGS = {
     "ㅎ";
 }
 
-local JUNGSEONGS = better_table.values(DISASSEMBLE_VOWELS_BY_VOWEL)
+local JUNGSEONGS = super_table.values(DISASSEMBLE_VOWELS_BY_VOWEL)
 table.sort(
     JUNGSEONGS,
     function(
@@ -103,7 +103,7 @@ table.sort(
 )
 
 --// 종성으로 올 수 있는 자모에는 ㄸ, ㅃ, ㅉ이 없기 때문에 따로 적는다.
-local JONGSEONGS = better_table.map(
+local JONGSEONGS = super_table.map(
     {
         "";
         "ㄱ";

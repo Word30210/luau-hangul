@@ -1,9 +1,8 @@
-local frktest = require("@lune_packages/frktest")
-local canBe = require("@hangul-luau/core/canBe")
+local frktest = require("../lune_packages/frktest")
+local canBe = require("../src/core/canBe")
 
 local test = frktest.test
 local check = frktest.assert.check
-local req = frktest.assert.require
 
 return function()
     test.suite("canBe.canBeChoseong", function()

@@ -9,7 +9,7 @@ export type DisassembledCompleteCharacter = {
 local module = {}
 
 --#[ Modules ]#--
-local better_table = require("@lune_packages/better_table")
+local super_table = require("../../luau_packages/super_table")
 local constants = require("../internal/constants")
 
 --#[ Variables ]#--
@@ -108,7 +108,7 @@ end
 function module.disassemble(
     string: string
 ): string
-    return better_table.reduce(
+    return super_table.reduce(
         module.disassembleToGroups(string),
         function(
             accumulator: string,

@@ -1,9 +1,8 @@
-local frktest = require("@lune_packages/frktest")
-local combine = require("@hangul-luau/core/combine")
+local frktest = require("../lune_packages/frktest")
+local combine = require("../src/core/combine")
 
 local test = frktest.test
 local check = frktest.assert.check
-local req = frktest.assert.require
 
 return function()
     test.suite("combine.combineCharacter", function()

@@ -2,10 +2,9 @@
 local module = {}
 
 --#[ Mdules ]#--
-local better_table = require("@lune_packages/better_table")
+local super_table = require("../../luau_packages/super_table")
 local hangul = require("../internal./hangul")
 local disassemble = require("../core/disassemble")
-local constants = require("../internal/constants")
 
 --#[ Variables ]#--
 --
@@ -26,7 +25,7 @@ function module.assemble(
         table.insert(graphemes, character)
     end
 
-    return better_table.reduce(
+    return super_table.reduce(
         graphemes,
         function(
             accumulator: string,

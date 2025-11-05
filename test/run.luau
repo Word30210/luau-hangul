@@ -1,4 +1,4 @@
-local frktest = require("@lune_packages/frktest")
+local frktest = require("../lune_packages/frktest")
 local console_reporter = frktest._reporters.lune_console_reporter
 
 require("./assemble.spec")()

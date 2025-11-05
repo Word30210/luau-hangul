@@ -6,9 +6,8 @@
 local module = {}
 
 --#[ Mdules ]#--
-local better_table = require("@lune_packages/better_table")
+local super_table = require("../../luau_packages/super_table")
 local disassemble = require("../core/disassemble")
-local constants = require("../internal/constants")
 
 --#[ Variables ]#--
 --
@@ -20,7 +19,7 @@ local constants = require("../internal/constants")
 function module.getChoseong(
     word: string
 ): string
-    return better_table.reduce(
+    return super_table.reduce(
         disassemble.disassembleToGroups(word),
         function(
             accumulator: string,

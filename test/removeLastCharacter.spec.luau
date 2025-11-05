@@ -1,9 +1,8 @@
-local frktest = require("@lune_packages/frktest")
-local removeLastCharacter = require("@hangul-luau/core/removeLastCharacter")
+local frktest = require("../lune_packages/frktest")
+local removeLastCharacter = require("../src/core/removeLastCharacter")
 
 local test = frktest.test
 local check = frktest.assert.check
-local req = frktest.assert.require
 
 return function()
     test.suite("removeLastCharacter.removeLastCharacter", function()

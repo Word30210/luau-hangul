@@ -2,7 +2,6 @@
 local module = {}
 
 --#[ Mdules ]#--
-local better_table = require("@lune_packages/better_table")
 local constants = require("../internal/constants")
 
 --#[ Variables ]#--

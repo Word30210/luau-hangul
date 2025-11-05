@@ -1,7 +1,0 @@
-{
-    "name": "hangul-luau",
-
-    "tree": {
-        "$path": "src"
-    }
-}

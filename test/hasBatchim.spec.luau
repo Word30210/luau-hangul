@@ -1,9 +1,8 @@
-local frktest = require("@lune_packages/frktest")
-local hasBatchim = require("@hangul-luau/core/hasBatchim")
+local frktest = require("../lune_packages/frktest")
+local hasBatchim = require("../src/core/hasBatchim")
 
 local test = frktest.test
 local check = frktest.assert.check
-local req = frktest.assert.require
 
 return function()
     test.suite("hasBatchim.hasBatchim", function()
