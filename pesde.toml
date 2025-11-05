@@ -23,6 +23,7 @@ super_table = { name = "word30210/super_table", version = "^0.1.0" }
 [dev_dependencies]
 frktest = { name = "itsfrank/frktest", version = "^0.0.2", target = "lune" }
 multitarget = { name = "ewdev/multitarget", version = "^0.4.2-rc.7", target = "lune" }
+darklua = { name = "pesde/darklua", version = "^0.17.2", target = "lune" }
 
 [scripts]
 build = "scripts/build.luau"
