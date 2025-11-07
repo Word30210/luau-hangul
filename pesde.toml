@@ -1,5 +1,5 @@
 name = "word30210/luau_hangul"
-version = "0.1.0"
+version = "0.1.1"
 description = "A luau library for handling Hangul characters."
 authors = ["word30210"]
 repository = "https://github.com/Word30210/luau-hangul"
