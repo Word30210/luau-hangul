@@ -13,6 +13,21 @@ local constants = require("./constants")
 --
 
 --#[ Functions ]#--
+local function excludeLastHangulCharacter(
+    source: string
+): (string, string)
+    local lastCharacterOffset = utf8.offset(source, -1)
+
+    if not lastCharacterOffset then
+        return "", ""
+    end
+
+    local restCharacters = string.sub(source, 0, lastCharacterOffset - 1)
+    local lastCharacter = string.sub(source, lastCharacterOffset, #source)
+
+    return restCharacters, lastCharacter
+end
+
 local function excludeLastElement<V>(
     array: { V }
 ): ({ V }, V)
@@ -209,14 +224,16 @@ function module.binaryAssemble(
     source: string,
     nextCharacter: string
 ): string
-    local rest, lastCharacter = excludeLastElement(splitHangulCharacters(source))
-    lastCharacter = lastCharacter or ""
+    local rest, lastCharacter = excludeLastHangulCharacter(source)
+    -- local rest, lastCharacter = excludeLastElement(splitHangulCharacters(source))
+    -- lastCharacter = lastCharacter or ""
 
     -- local needJoinString = isWhitespace(lastCharacter) or isWhitespace(nextCharacter)
     local needJoinString = not module.isHangul(lastCharacter) or not module.isHangul(nextCharacter)
 
     return joinString(
-        joinString(table.unpack(rest)),
+        -- joinString(table.unpack(rest)),
+        rest,
         needJoinString
             and joinString(lastCharacter, nextCharacter)
             or module.binaryAssembleCharacters(lastCharacter, nextCharacter)

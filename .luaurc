@@ -4,5 +4,8 @@
     "*": true,
     "LocalShadow": false
   },
-  "lintErrors": true
+  "lintErrors": true,
+  "aliases": {
+    "lune": "~/.lune/.typedefs/0.10.4/"
+  }
 }
