@@ -143,7 +143,6 @@ local JONGSEONGS = super_table.map(
 )
 
 local HANGUL_DIGITS = {
-    "";
     "만";
     "억";
     "조";
@@ -166,9 +165,9 @@ local HANGUL_DIGITS = {
 }
 
 local HANGUL_DIGITS_MAX = #HANGUL_DIGITS * 4
-local HANGUL_NUMBERS = { "", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구" }
+local HANGUL_NUMBERS = { "일", "이", "삼", "사", "오", "육", "칠", "팔", "구" }
 local HANGUL_NUMBERS_FOR_DECIMAL = { "영", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구" }
-local HANGUL_CARDINAL = { "", "십", "백", "천" }
+local HANGUL_CARDINAL = { "십", "백", "천" }
 
 local ALPHABET_TO_KOREAN = {
     ["A"] = "에이";
