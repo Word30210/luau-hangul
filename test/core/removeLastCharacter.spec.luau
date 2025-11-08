@@ -1,5 +1,5 @@
-local frktest = require("../lune_packages/frktest")
-local removeLastCharacter = require("../src/core/removeLastCharacter")
+local frktest = require("../../lune_packages/frktest")
+local removeLastCharacter = require("../../src/core/removeLastCharacter")
 
 local test = frktest.test
 local check = frktest.assert.check

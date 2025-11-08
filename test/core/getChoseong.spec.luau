@@ -1,5 +1,5 @@
-local frktest = require("../lune_packages/frktest")
-local getChoseong = require("../src/core/getChoseong")
+local frktest = require("../../lune_packages/frktest")
+local getChoseong = require("../../src/core/getChoseong")
 
 local test = frktest.test
 local check = frktest.assert.check

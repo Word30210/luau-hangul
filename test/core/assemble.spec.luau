@@ -1,5 +1,5 @@
-local frktest = require("../lune_packages/frktest")
-local assemble = require("../src/core/assemble")
+local frktest = require("../../lune_packages/frktest")
+local assemble = require("../../src/core/assemble")
 
 local test = frktest.test
 local check = frktest.assert.check

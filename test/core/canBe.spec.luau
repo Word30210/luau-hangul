@@ -1,5 +1,5 @@
-local frktest = require("../lune_packages/frktest")
-local canBe = require("../src/core/canBe")
+local frktest = require("../../lune_packages/frktest")
+local canBe = require("../../src/core/canBe")
 
 local test = frktest.test
 local check = frktest.assert.check
