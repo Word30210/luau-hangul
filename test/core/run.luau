@@ -24,3 +24,5 @@ end
 
 console_reporter.init()
 frktest.run()
+
+return nil
