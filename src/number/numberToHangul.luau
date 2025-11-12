@@ -2,7 +2,7 @@
 local module = {}
 
 --#[ Modules ]#--
-local super_table = require("../../luau_packages/super_table")
+local super_table = require("@luau_pkg/super_table")
 local constants = require("../internal/constants")
 
 --#[ Variables ]#--

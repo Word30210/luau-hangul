@@ -2,8 +2,8 @@
 local module = {}
 
 --#[ Mdules ]#--
-local super_table = require("../../luau_packages/super_table")
-local hangul = require("../internal./hangul")
+local super_table = require("@luau_pkg/super_table")
+local hangul = require("../internal/hangul")
 local disassemble = require("../core/disassemble")
 
 --#[ Variables ]#--

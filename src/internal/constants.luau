@@ -1,5 +1,5 @@
 --#[ Modules ]#--
-local super_table = require("../../luau_packages/super_table")
+local super_table = require("@luau_pkg/super_table")
 
 --#[ Variables ]#--
 local COMPLETE_HANGUL_START_CHARCODE = utf8.codepoint("가")

@@ -6,7 +6,7 @@
 local module = {}
 
 --#[ Mdules ]#--
-local super_table = require("../../luau_packages/super_table")
+local super_table = require("@luau_pkg/super_table")
 local disassemble = require("../core/disassemble")
 
 --#[ Variables ]#--
