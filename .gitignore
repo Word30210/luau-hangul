@@ -4,3 +4,7 @@
 
 # multitarget build output
 dist*
+
+# rbxm filse
+*.rbxm
+*.lock.rbxm
