@@ -13,7 +13,7 @@ local getChoseong = hangul.core.getChoseong
 local searchWord = "라면"
 local userInput = "ㄹㅁ"
 
-local result = getChoseong.GetChoseong(searchWord) -- ㄹㅁ
+local result = getChoseong.getChoseong(searchWord) -- ㄹㅁ
 
 -- 검색어의 초성과 사용자 입력 초성이 일치하는지 확인
 if result == userInput then
